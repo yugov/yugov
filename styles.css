@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|PT+Mono');
+
+body
+{
+	background-color: #555;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: 'Anonymous Pro', monospace;
+}
+
+h1
+{
+	font-size: 48px;
+}
+
+h3
+{
+	font-size: 30px;
+}
+
+a:link, a:hover, a:active, a:visited
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+a:link[href^="http"], a:active[href^="http"], a:visited[href^="http"]
+{
+	color: #fff;
+}
+
+a:hover[href^="http"]
+{
+	color: #fff;
+}
+
+#block1
+{
+	background: url(img/bg1.png) no-repeat;
+	height: 100vh;
+}
+
+#face
+{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background: url(img/face.png);
+	background-size: 100%;
+	margin: 20px auto;
+}
+
+#contacts
+{
+	margin-top: 20px;
+	width: 340px;
+	padding-left: 44px;
+	padding-right: 15px;
+}
+
+#contacts > .row > div
+{
+	text-align: left;
+}
+
+#skills
+{
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 50px;
+	min-width: 340px;
+	width: 70%;
+}
+
+.block
+{
+	width: 100%;
+	background-size: auto 100% !important;
+	background-position: center !important;
+	padding: 0px 0 10px;
+	position: relative;
+	display: table-cell; /* vertical */
+    vertical-align: middle; /* vertical */
+}
+
+.block *
+{
+	z-index: 2;
+	position: relative;
+}
+
+.block > :first-child
+{
+	margin-top: 0;
+}
+
+.mask
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	z-index: 1;
+	background: #000;
+	opacity: 0.3;
+}
+
+.infoblock
+{
+	background: rgba(0, 0, 0, 0.3);
+	font-size: 24px;
+	border-top: 1px solid;
+	border-radius: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.infoblock > .row > div
+{
+	margin-top: 5px;
+}
+
+@media (max-width: 339px)
+{
+	h1
+	{
+		font-size: 30px;
+	}
+	
+	h3
+	{
+		font-size: 24px;
+	}
+	
+	#contacts
+	{
+		padding-left: 30px;
+	}
+	
+	#contacts, #skills
+	{
+		width: 90%;
+		min-width: 240px;
+	}
+	
+	.infoblock
+	{
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 768px)
+{
+	#skills > .row > div
+	{
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 992px)
+{
+	#contacts
+	{
+		width: 660px;
+		padding-right: 44px;
+	}
+	
+	#contacts > .row > div
+	{
+		text-align: center;
+	}
+	
+	.infoblock
+	{
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+}
+
+@media (min-width: 1200px)
+{
+	#contacts
+	{
+		width: 55%;
+	}
+}
