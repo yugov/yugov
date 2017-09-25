@@ -1,3 +1,2 @@
 # My personal website. 
-http://ayugov.ru
-http://yugov.github.io
+http://ayugov.ru or http://yugov.github.io
